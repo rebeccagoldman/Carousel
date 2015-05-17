@@ -116,20 +116,37 @@ class SignInViewController: UIViewController, UIScrollViewDelegate, UIAlertViewD
                 alertView.show()
                 
                 
-            delay(2, { () -> () in
+            delay(1.6, { () -> () in
                 
 //                self.loadingIndicatorView.stopAnimating()
                 alertView.dismissWithClickedButtonIndex(0, animated: true)
 
-                self.performSegueWithIdentifier("segueToTutorial", sender: nil)
                 
+            
             })
+        
+            delay(2, { () -> () in
+
+                self.performSegueWithIdentifier("segueToTutorial", sender: nil)
+                    
+                })
 
             } else {
             
-                var alertView = UIAlertView(title: "Error", message: "Incorrect email and password", delegate: self, cancelButtonTitle: "OK")
                 
-                alertView.show()
+                var signingInView = UIAlertView(title: "Signing in...", message: nil, delegate: self, cancelButtonTitle: nil)
+                signingInView.show()
+
+                
+                delay(0.8, { () -> () in
+                    
+
+                    signingInView.dismissWithClickedButtonIndex(0, animated: true)
+
+                var credentialErrorView = UIAlertView(title: "Error", message: "Incorrect email and password", delegate: self, cancelButtonTitle: "OK")
+                
+                credentialErrorView.show()
+                     })
        }
         }
     }
