@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4992C61B031B930051BB28 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992C51B031B930051BB28 /* TutorialViewController.swift */; };
+		6B4992C81B03DA860051BB28 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992C71B03DA860051BB28 /* SignInViewController.swift */; };
+		6B4992CA1B083D8C0051BB28 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992C91B083D8C0051BB28 /* FeedViewController.swift */; };
+		6B4992CC1B08F03A0051BB28 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992CB1B08F03A0051BB28 /* SettingsViewController.swift */; };
+		6B4992CE1B08F3CF0051BB28 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992CD1B08F3CF0051BB28 /* ConversationsViewController.swift */; };
 		6BD700F71B01CDC300E0FCA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD700F61B01CDC300E0FCA0 /* AppDelegate.swift */; };
 		6BD700F91B01CDC300E0FCA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD700F81B01CDC300E0FCA0 /* ViewController.swift */; };
 		6BD700FC1B01CDC300E0FCA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD700FA1B01CDC300E0FCA0 /* Main.storyboard */; };
 		6BD700FE1B01CDC300E0FCA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD700FD1B01CDC300E0FCA0 /* Images.xcassets */; };
 		6BD701011B01CDC300E0FCA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD700FF1B01CDC300E0FCA0 /* LaunchScreen.xib */; };
 		6BD7010D1B01CDC300E0FCA0 /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7010C1B01CDC300E0FCA0 /* CarouselTests.swift */; };
+		6BD701171B01DEBE00E0FCA0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD701161B01DEBE00E0FCA0 /* Common.swift */; };
+		6BD701191B01DF0800E0FCA0 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD701181B01DF0800E0FCA0 /* IntroViewController.swift */; };
+		6BD7011C1B01EB1700E0FCA0 /* CreateDropboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7011B1B01EB1700E0FCA0 /* CreateDropboxViewController.swift */; };
+		6BD7011E1B02D22500E0FCA0 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7011D1B02D22500E0FCA0 /* TermsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +35,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B4992C51B031B930051BB28 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialViewController.swift; path = ../Carousel/TutorialViewController.swift; sourceTree = "<group>"; };
+		6B4992C71B03DA860051BB28 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../Carousel/SignInViewController.swift; sourceTree = "<group>"; };
+		6B4992C91B083D8C0051BB28 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../Carousel/FeedViewController.swift; sourceTree = "<group>"; };
+		6B4992CB1B08F03A0051BB28 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../Carousel/SettingsViewController.swift; sourceTree = "<group>"; };
+		6B4992CD1B08F3CF0051BB28 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationsViewController.swift; path = ../Carousel/ConversationsViewController.swift; sourceTree = "<group>"; };
 		6BD700F11B01CDC300E0FCA0 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD700F51B01CDC300E0FCA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD700F61B01CDC300E0FCA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BD700F81B01CDC300E0FCA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BD700F81B01CDC300E0FCA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../Carousel/ViewController.swift; sourceTree = "<group>"; };
 		6BD700FB1B01CDC300E0FCA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BD700FD1B01CDC300E0FCA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BD701001B01CDC300E0FCA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6BD701061B01CDC300E0FCA0 /* CarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD7010B1B01CDC300E0FCA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD7010C1B01CDC300E0FCA0 /* CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTests.swift; sourceTree = "<group>"; };
+		6BD701161B01DEBE00E0FCA0 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../../Downloads/Common.swift; sourceTree = "<group>"; };
+		6BD701181B01DF0800E0FCA0 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = ../Carousel/IntroViewController.swift; sourceTree = "<group>"; };
+		6BD7011B1B01EB1700E0FCA0 /* CreateDropboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateDropboxViewController.swift; path = ../Carousel/CreateDropboxViewController.swift; sourceTree = "<group>"; };
+		6BD7011D1B02D22500E0FCA0 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsViewController.swift; path = ../Carousel/TermsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +95,12 @@
 		6BD700F31B01CDC300E0FCA0 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				6BD7011A1B01DF9A00E0FCA0 /* ViewControllers */,
 				6BD700F61B01CDC300E0FCA0 /* AppDelegate.swift */,
-				6BD700F81B01CDC300E0FCA0 /* ViewController.swift */,
 				6BD700FA1B01CDC300E0FCA0 /* Main.storyboard */,
 				6BD700FD1B01CDC300E0FCA0 /* Images.xcassets */,
 				6BD700FF1B01CDC300E0FCA0 /* LaunchScreen.xib */,
+				6BD701161B01DEBE00E0FCA0 /* Common.swift */,
 				6BD700F41B01CDC300E0FCA0 /* Supporting Files */,
 			);
 			path = Carousel;
@@ -110,6 +129,23 @@
 				6BD7010B1B01CDC300E0FCA0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BD7011A1B01DF9A00E0FCA0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BD700F81B01CDC300E0FCA0 /* ViewController.swift */,
+				6BD701181B01DF0800E0FCA0 /* IntroViewController.swift */,
+				6BD7011B1B01EB1700E0FCA0 /* CreateDropboxViewController.swift */,
+				6BD7011D1B02D22500E0FCA0 /* TermsViewController.swift */,
+				6B4992C51B031B930051BB28 /* TutorialViewController.swift */,
+				6B4992C71B03DA860051BB28 /* SignInViewController.swift */,
+				6B4992C91B083D8C0051BB28 /* FeedViewController.swift */,
+				6B4992CB1B08F03A0051BB28 /* SettingsViewController.swift */,
+				6B4992CD1B08F3CF0051BB28 /* ConversationsViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ../Carousel.xcodeproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +248,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD7011C1B01EB1700E0FCA0 /* CreateDropboxViewController.swift in Sources */,
+				6B4992CA1B083D8C0051BB28 /* FeedViewController.swift in Sources */,
+				6B4992C61B031B930051BB28 /* TutorialViewController.swift in Sources */,
+				6B4992CC1B08F03A0051BB28 /* SettingsViewController.swift in Sources */,
 				6BD700F91B01CDC300E0FCA0 /* ViewController.swift in Sources */,
+				6BD701171B01DEBE00E0FCA0 /* Common.swift in Sources */,
+				6B4992C81B03DA860051BB28 /* SignInViewController.swift in Sources */,
 				6BD700F71B01CDC300E0FCA0 /* AppDelegate.swift in Sources */,
+				6BD7011E1B02D22500E0FCA0 /* TermsViewController.swift in Sources */,
+				6B4992CE1B08F3CF0051BB28 /* ConversationsViewController.swift in Sources */,
+				6BD701191B01DF0800E0FCA0 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +454,7 @@
 				6BD701121B01CDC300E0FCA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BD701131B01CDC300E0FCA0 /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +463,7 @@
 				6BD701151B01CDC300E0FCA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
