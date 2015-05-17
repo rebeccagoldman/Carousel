@@ -8,28 +8,25 @@
 
 import UIKit
 
-class CreateDropboxViewController: UIViewController {
+class CreateDropboxViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var createButton: UIImageView!
     @IBOutlet weak var firstNameField: UITextField!
-    @IBOutlet weak var scrollBackgroundView: UIView!
     @IBOutlet weak var termsButton: UIButton!
     @IBOutlet weak var checkBoxButton: UIButton!
+    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var createButtonView: UIView!
+    @IBOutlet weak var formView: UIView!
 
-    @IBOutlet var onTapRecognizer: UITapGestureRecognizer!
-    
-    var initialScrollCenter: CGPoint!
-    var initialButtonCenter: CGPoint!
     
     override func viewDidLoad() {
         
-        initialScrollCenter = scrollView.center
-        initialButtonCenter = createButton.center
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 320, height: 568)
+        
+        scrollView.delegate = self
+        scrollView.contentSize = CGSizeMake(320, 568)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         
@@ -62,53 +59,23 @@ class CreateDropboxViewController: UIViewController {
 
     
     func keyboardWillShow(notification: NSNotification!) {
-        
-        
-        var userInfo = notification.userInfo!
-        
-        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue().size
-        println("\(kbSize)")
-        var durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber
-        var animationDuration = durationValue.doubleValue
-        var curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber
-        var animationCurve = curveValue.integerValue
-        
-        UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions(UInt(animationCurve << 16)), animations: {
-            
-            self.scrollView.center.y -= kbSize.height - 100
-            self.createButton.center.y -= 110
-            // If you need it, you can use the kbSize property above to get the keyboard width and height.
-            }, completion: nil)
-
+   
+        formView.transform = CGAffineTransformMakeTranslation(0, -120)
+        createButtonView.transform = CGAffineTransformMakeTranslation(0, -200)
         
     }
     
     func keyboardWillHide(notification: NSNotification!) {
+     
         
-        
-        var userInfo = notification.userInfo!
-        
-        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue().size
-        println("\(kbSize)")
-        var durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber
-        var animationDuration = durationValue.doubleValue
-        var curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber
-        var animationCurve = curveValue.integerValue
-        
-        UIView.animateWithDuration(animationDuration, delay: 0.0, options: UIViewAnimationOptions(UInt(animationCurve << 16)), animations: {
-            
-            self.scrollView.center = self.initialScrollCenter
-            self.createButton.center = self.initialButtonCenter
-            // If you need it, you can use the kbSize property above to get the keyboard width and height.
-            }, completion: nil)
-
+        formView.transform = CGAffineTransformMakeTranslation(0, 0)
+        createButtonView.transform = CGAffineTransformMakeTranslation(0, 0)
         
         
     }
     
 
-
-    @IBAction func onTap(sender: AnyObject) {
+    @IBAction func scrollViewDidScroll(UIScrollView) {
          view.endEditing(true)
     }
 }

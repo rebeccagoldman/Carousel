@@ -41,12 +41,10 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         scrollView.sendSubviewToBack(backgroundImage)
         
 
-        // Do any additional setup after loading the view.
     }
     
     
     func convertValue(value: Float, r1Min: Float, r1Max: Float, r2Min: Float, r2Max: Float) -> Float {
-        
         var ratio = (r2Max - r2Min) / (r1Max - r1Min)
         return value * ratio + r2Min - r1Min * ratio
         
@@ -54,21 +52,15 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     
     
     func transformView(offset: Float) {
-    
-
         
-    // transform coordinates
-        
-        
+        // loop through tiles & transform each
         for tile in enumerate(tiles) {
             
-            
     var tx = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: xOffsets[tile.index], r2Max: 0)
+            
     var ty = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: yOffsets[tile.index], r2Max: 0)
     
-    // scale
     var scale = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: scales[tile.index], r2Max: 1)
-    // rotate
     
     var rotation = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: rotations[tile.index], r2Max: 0)
     
@@ -86,9 +78,15 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         
         var offset = Float(scrollView.contentOffset.y)
         
-        transformView(offset)
+        // limit offset to values between 0 -> 568
         
-        println("Content offset: \(scrollView.contentOffset.y)")
+        if offset > 568 {
+            offset = 568
+        } else if offset < 0 {
+            offset = 0
+        }
+        
+        transformView(offset)
         
     }
 

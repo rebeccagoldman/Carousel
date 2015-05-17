@@ -53,9 +53,9 @@ class SignInViewController: UIViewController, UIScrollViewDelegate, UIAlertViewD
         loginView.center.y += 100
         loginView.transform = CGAffineTransformMakeScale(0.8, 0.8)
         
-        navView.alpha = 0
-        navView.center.y += 100
-        navView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+//        navView.alpha = 0
+//        navView.center.y += 100
+//        navView.transform = CGAffineTransformMakeScale(0.8, 0.8)
 
         loginButtonsView.alpha = 0
         loginButtonsView.center.y -= 100
@@ -70,13 +70,13 @@ class SignInViewController: UIViewController, UIScrollViewDelegate, UIAlertViewD
         super.viewDidAppear(animated)
         
         
-        UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        UIView.animateWithDuration(0.05, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             self.loginView.alpha = 1
             self.loginView.center.y -= 100
             self.loginView.transform = CGAffineTransformMakeScale(1, 1)
-            self.navView.alpha = 1
-            self.navView.transform = CGAffineTransformMakeScale(1, 1)
-            self.navView.center.y -= 100
+//            self.navView.alpha = 1
+//            self.navView.transform = CGAffineTransformMakeScale(1, 1)
+//            self.navView.center.y -= 100
             
             self.loginButtonsView.alpha = 1
             self.loginButtonsView.center.y += 100
@@ -92,7 +92,6 @@ class SignInViewController: UIViewController, UIScrollViewDelegate, UIAlertViewD
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
     
 
@@ -143,7 +142,7 @@ class SignInViewController: UIViewController, UIScrollViewDelegate, UIAlertViewD
 
                     signingInView.dismissWithClickedButtonIndex(0, animated: true)
 
-                var credentialErrorView = UIAlertView(title: "Error", message: "Incorrect email and password", delegate: self, cancelButtonTitle: "OK")
+                var credentialErrorView = UIAlertView(title: "Sign in failed", message: "Incorrect email and password", delegate: self, cancelButtonTitle: "OK")
                 
                 credentialErrorView.show()
                      })
@@ -154,11 +153,7 @@ class SignInViewController: UIViewController, UIScrollViewDelegate, UIAlertViewD
     
     
     func keyboardWillShow(notification: NSNotification!) {
-        
-     
-        var userInfo = notification.userInfo!
-        
-        var kbSize = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue().size
+
 
         
         scrollView.transform = CGAffineTransformMakeTranslation(0, -120)

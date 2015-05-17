@@ -11,7 +11,6 @@ import UIKit
 class TutorialViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var horizontalScrollView: UIScrollView!
-    @IBOutlet weak var tutorialImageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var getStartedButton: UIImageView!
     
