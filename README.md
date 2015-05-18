@@ -1,7 +1,6 @@
 # Carousel
 
 <h4>Time Spent</h4>
-<br/>
 Approximately 15 hours, completing all required stories and most optionals 
 
 <h4>Optionals completed:</h1> 
@@ -28,4 +27,5 @@ Approximately 15 hours, completing all required stories and most optionals
 <li>tied a "Share" button in the "Selected" header to a Share sheet </li>
 </li>
 
+<br/>
 <a href="http://imgur.com/eMVybOF"><img src="http://i.imgur.com/eMVybOF.gif" title="source: imgur.com" /></a>
