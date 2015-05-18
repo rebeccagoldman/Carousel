@@ -1,24 +1,21 @@
 //
-//  TermsViewController.swift
+//  LearnMoreViewController.swift
 //  Carousel
 //
-//  Created by Rebecca Goldman on 5/12/15.
+//  Created by Rebecca Goldman on 5/17/15.
 //  Copyright (c) 2015 codepath. All rights reserved.
 //
 
 import UIKit
 
-class TermsViewController: UIViewController {
+class LearnMoreViewController: UIViewController {
 
     @IBOutlet weak var doneButton: UIButton!
     
-    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = NSURL (string: "https://www.dropbox.com/terms?mobile=1");
-        let requestObj = NSURLRequest(URL: url!);
-        webView.loadRequest(requestObj);
         // Do any additional setup after loading the view.
     }
 
@@ -27,10 +24,9 @@ class TermsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func doneButtonPressed(sender: AnyObject) {
+    @IBAction func doneButtonTapped(sender: AnyObject) {
         
-        self.dismissViewControllerAnimated(true, completion: nil)
-        println("pressed")
+        dismissViewControllerAnimated(true, completion: nil)
         
     }
 
@@ -45,4 +41,3 @@ class TermsViewController: UIViewController {
     */
 
 }
-//

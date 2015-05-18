@@ -13,10 +13,14 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImage: UIImageView!
     @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var learnMoreButton: UIButton!
+    @IBOutlet weak var xButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        feedImage.center.y += 22
+
         scrollView.contentSize = feedImage.image!.size
 
         // Do any additional setup after loading the view.
@@ -27,7 +31,18 @@ class FeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func dismissLearnMoreBanner(sender: AnyObject) {
+        
+      
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            
+        self.learnMoreButton.hidden = true
+        self.feedImage.center.y -= 44
+        
+            }, completion: nil)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -37,5 +52,6 @@ class FeedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

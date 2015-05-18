@@ -12,6 +12,7 @@
 		6B4992CA1B083D8C0051BB28 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992C91B083D8C0051BB28 /* FeedViewController.swift */; };
 		6B4992CC1B08F03A0051BB28 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992CB1B08F03A0051BB28 /* SettingsViewController.swift */; };
 		6B4992CE1B08F3CF0051BB28 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992CD1B08F3CF0051BB28 /* ConversationsViewController.swift */; };
+		6B4992D01B09618E0051BB28 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4992CF1B09618E0051BB28 /* LearnMoreViewController.swift */; };
 		6BD700F71B01CDC300E0FCA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD700F61B01CDC300E0FCA0 /* AppDelegate.swift */; };
 		6BD700F91B01CDC300E0FCA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD700F81B01CDC300E0FCA0 /* ViewController.swift */; };
 		6BD700FC1B01CDC300E0FCA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD700FA1B01CDC300E0FCA0 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		6B4992C91B083D8C0051BB28 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../Carousel/FeedViewController.swift; sourceTree = "<group>"; };
 		6B4992CB1B08F03A0051BB28 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../Carousel/SettingsViewController.swift; sourceTree = "<group>"; };
 		6B4992CD1B08F3CF0051BB28 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationsViewController.swift; path = ../Carousel/ConversationsViewController.swift; sourceTree = "<group>"; };
+		6B4992CF1B09618E0051BB28 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LearnMoreViewController.swift; path = ../Carousel/LearnMoreViewController.swift; sourceTree = "<group>"; };
 		6BD700F11B01CDC300E0FCA0 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD700F51B01CDC300E0FCA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD700F61B01CDC300E0FCA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				6B4992C91B083D8C0051BB28 /* FeedViewController.swift */,
 				6B4992CB1B08F03A0051BB28 /* SettingsViewController.swift */,
 				6B4992CD1B08F3CF0051BB28 /* ConversationsViewController.swift */,
+				6B4992CF1B09618E0051BB28 /* LearnMoreViewController.swift */,
 			);
 			name = ViewControllers;
 			path = ../Carousel.xcodeproj;
@@ -252,6 +255,7 @@
 				6B4992CA1B083D8C0051BB28 /* FeedViewController.swift in Sources */,
 				6B4992C61B031B930051BB28 /* TutorialViewController.swift in Sources */,
 				6B4992CC1B08F03A0051BB28 /* SettingsViewController.swift in Sources */,
+				6B4992D01B09618E0051BB28 /* LearnMoreViewController.swift in Sources */,
 				6BD700F91B01CDC300E0FCA0 /* ViewController.swift in Sources */,
 				6BD701171B01DEBE00E0FCA0 /* Common.swift in Sources */,
 				6B4992C81B03DA860051BB28 /* SignInViewController.swift in Sources */,
