@@ -26,7 +26,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        feedImage.center.y += 22
+        scrollView.center.y += 22
         shareNavView.hidden = true
         scrollView.contentSize = feedImage.image!.size
     }
@@ -85,7 +85,7 @@ class FeedViewController: UIViewController {
         UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             
         self.learnMoreButton.hidden = true
-        self.feedImage.center.y -= 44
+        self.scrollView.center.y -= 44
         
             }, completion: nil)
         
@@ -93,7 +93,7 @@ class FeedViewController: UIViewController {
     
     @IBAction func userDidTapSelectButton(sender: AnyObject) {
         
-println("tapped")
+
         shareNavView.hidden = false
         
     }
