@@ -25,6 +25,7 @@ Approximately 15 hours, completing all required stories and most optionals
 <li>enabled the "Select" button on the Feed</li>
 <li>built a "Selected" header state for the Feed</li>
 <li>tied a "Share" button in the "Selected" header to a Share sheet </li>
+<li>animated dismissal of banner</li>
 </li>
 
 <br/>
