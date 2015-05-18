@@ -23,18 +23,17 @@ class LearnMoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         var savedValue = NSUserDefaults.standardUserDefaults()
-        savedValue.boolForKey("photoPressedEvent")
+        savedValue.objectForKey("photoPressedEvent")
         
         var savedValue2 = NSUserDefaults.standardUserDefaults()
-        savedValue2.boolForKey("screenSwipedEvent")
+        savedValue2.objectForKey("shareEvent")
         
         var savedValue3 = NSUserDefaults.standardUserDefaults()
-        savedValue2.boolForKey("shareEvent")
+        savedValue3.objectForKey("screenSwipedEvent")
 
 
-        if savedValue == false {
+        if savedValue == "" {
             // You've never written to pressed_photo before, so should be unchecked.
             event1CompleteView.hidden = true
 
@@ -47,7 +46,7 @@ class LearnMoreViewController: UIViewController {
         }
         
             
-        if savedValue2 == false {
+        if savedValue2 == "" {
             event2CompleteView.hidden = true
             
             } else {
@@ -56,7 +55,7 @@ class LearnMoreViewController: UIViewController {
             
             }
         
-        if savedValue3 == false {
+        if savedValue3 == "" {
             event3CompleteView.hidden = true
             
         } else {
