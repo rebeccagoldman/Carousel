@@ -14,7 +14,7 @@ Approximately 15 hours, completing all required stories and most optionals
 <li>Tapping on Terms shows a webview with the terms. </li>
 <li>User is taken to the tutorial screens upon tapping the "Create a Dropbox" button. </li>
 <li>User can page between the screens with updated dots - Done 
-<li>Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spi</li>n" button. </li>
+<li>Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button. </li>
 <li>Learn more about Carousel</li>
 <li>Show the "Learn more about Carousel" button in the photo timeline. </li>
 <li>Tap the X to dismiss the banner </li>
