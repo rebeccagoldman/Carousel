@@ -1,8 +1,10 @@
 # Carousel
 
-Time Spent: Approximately 15 hours, completing all required stories and most optionals 
+<h4>Time Spent</h4>
+<br/>
+Approximately 15 hours, completing all required stories and most optionals 
 
-Optionals completed: 
+<h4>Optionals completed:</h1> 
 <ul>
 <li>Photo tiles move with scrolling</li>
 <li>When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.</li>
@@ -18,7 +20,7 @@ Optionals completed:
 <li>Show the "Learn more about Carousel" button in the photo timeline. </li>
 <li>Tap the X to dismiss the banner </li>
 </ul>
-Additionally: 
+<h4>Additionally:</h1>
 <ul>
 <li>limited offsets for initial screen to values between 0 to 568 </li>
 <li>enabled the "Select" button on the Feed</li>
@@ -26,4 +28,4 @@ Additionally:
 <li>tied a "Share" button in the "Selected" header to a Share sheet </li>
 </li>
 
-<a href="http://imgur.com/nrq72Gf"><img src="http://i.imgur.com/nrq72Gf.gif" title="source: imgur.com" /></a>
+<a href="http://imgur.com/eMVybOF"><img src="http://i.imgur.com/eMVybOF.gif" title="source: imgur.com" /></a>
