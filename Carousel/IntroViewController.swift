@@ -20,8 +20,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tile5View: UIImageView!
     @IBOutlet weak var tile6View: UIImageView!
     
-    var isPresenting: Bool = true
-
 
     var yOffsets : [Float] = [-280, -250, -420, -400, -510, -490]
     var xOffsets : [Float] = [-75, 35, 8, 85, -115, -100]

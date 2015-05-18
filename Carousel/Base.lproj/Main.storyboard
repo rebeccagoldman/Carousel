@@ -608,12 +608,23 @@
                                     <segue destination="beu-t8-Kj6" kind="modal" id="ZBo-pq-adc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kmB-hY-0N4" userLabel="imageButton">
+                                <rect key="frame" x="-2" y="109" width="107" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userDidTapImage:" destination="qOD-SU-r98" eventType="touchUpInside" id="Dgr-H6-GFd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yYA-Fw-c9Q"/>
                     <connections>
                         <outlet property="feedImage" destination="LN5-Ed-akA" id="DSa-ef-Gsc"/>
+                        <outlet property="imageButton" destination="kmB-hY-0N4" id="K1a-pn-XVu"/>
                         <outlet property="learnMoreButton" destination="afu-Vn-Vfw" id="2Zi-o8-ptj"/>
                         <outlet property="scrollView" destination="lkw-xU-JES" id="2Ni-q5-XFQ"/>
                         <outlet property="xButton" destination="7JO-er-VSw" id="wcj-9w-bg7"/>
@@ -695,6 +706,12 @@
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="29e-e7-N2R" id="xoJ-rf-8eu"/>
+                        <outlet property="event1CompleteView" destination="KAK-1M-55R" id="qS8-7o-J1S"/>
+                        <outlet property="event1IncompleteView" destination="3Io-Aq-uRN" id="6DV-u3-44Q"/>
+                        <outlet property="event2CompleteView" destination="GkX-oU-gwd" id="Le3-rE-cYc"/>
+                        <outlet property="event2IncompleteView" destination="cr8-Hi-Lfz" id="Lth-L8-HdH"/>
+                        <outlet property="event3CompleteView" destination="cMN-s3-YIj" id="CfG-KY-tta"/>
+                        <outlet property="event3IncompleteView" destination="8ei-cc-D40" id="Olt-2f-f1b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvb-0D-bge" userLabel="First Responder" sceneMemberID="firstResponder"/>

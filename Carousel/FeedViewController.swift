@@ -15,6 +15,7 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var learnMoreButton: UIButton!
     @IBOutlet weak var xButton: UIButton!
+    @IBOutlet weak var imageButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,18 @@ class FeedViewController: UIViewController {
             }, completion: nil)
         
     }
+    
+    @IBAction func userDidTapImage(sender: AnyObject) {
+    
+        println("tapped")
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject("pressed_photo", forKey: "photoPressedEvent")
+        defaults.synchronize()
+
+       println("\(defaults)")
+        
+    }
+    
     
     /*
     // MARK: - Navigation

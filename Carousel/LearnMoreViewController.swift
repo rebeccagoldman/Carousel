@@ -12,9 +12,38 @@ class LearnMoreViewController: UIViewController {
 
     @IBOutlet weak var doneButton: UIButton!
     
+    @IBOutlet weak var event1CompleteView: UIImageView!
+    @IBOutlet weak var event2CompleteView: UIImageView!
+    @IBOutlet weak var event3CompleteView: UIImageView!
+    
+    @IBOutlet weak var event1IncompleteView: UIImageView!
+    @IBOutlet weak var event2IncompleteView: UIImageView!
+    @IBOutlet weak var event3IncompleteView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        var savedValue = NSUserDefaults.standardUserDefaults()
+        savedValue.objectForKey("photoPressedEvent")
+
+        if savedValue == "" {
+            // You've never written to pressed_photo before, so should be unchecked.
+            event1CompleteView.hidden = true
+
+            
+        } else {
+            // Check the box
+            event1CompleteView.hidden = false
+            event1IncompleteView.hidden = true
+            
+        }
+        
+
+        
+        event2CompleteView.hidden = true
+        event3CompleteView.hidden = true
+
 
         // Do any additional setup after loading the view.
     }
@@ -30,6 +59,8 @@ class LearnMoreViewController: UIViewController {
         
     }
 
+
+    
     /*
     // MARK: - Navigation
 
